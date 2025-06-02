@@ -1,0 +1,58 @@
+/*Global styles */
+html, body {
+    font-size: 16px;
+}
+
+/* Paragraph styles */
+p {
+    font-weight: 400;
+    line-height: 1.4em;
+}
+
+/* Headers */
+h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 500;
+    text-align: left;
+    padding-top: 15px;
+}
+
+/* Paragraph intro class */
+.intro {
+    text-indent: 2em;
+}
+
+/* Special sentence styling */
+.sentence {
+    font-style: italic;
+}
+
+/* Address section */
+address {
+    text-align: center;
+}
+
+/* Website link styles */
+address a {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #4F3674;
+    text-decoration: none;
+}
+
+/* Hover effect */
+address a:hover {
+    text-decoration: underline;
+    background-color: #D6A800;
+}
+
+/* Visited link effect */
+address a:visited {
+    color: #5a5a5a;
+    font-style: italic;
+}
