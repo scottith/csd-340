@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+#container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #4F3674;
+    margin-bottom: 40px;
+}
+
+.left, .right {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+}
+
+.left h3, .right h3 {
+    color: #4F3674;
+}
+
+ol, ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.footer {
+    width: 100%;
+    margin-top: 20%;
+}
+
+.footer a {
+    float: right;
+    font-weight: bold;
+    text-decoration: none;
+    color: #4F3674;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    background-color: #D6A800;
+}
