@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Scott Macioce - CSD 340 - Assignment 9.3 -->
+<head>
+    <meta charset="UTF-8">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <script>
+        var first = "adventure";
+        var second = "Ohio";
+        var third = "family";
+        var fourth = "technology";
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        span {
+            font-weight: bold;
+            color: #CC5500;
+        }
+        button {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Assignment 9.3: JavaScript - Part 1</h1>
+
+    <p>
+        Life is a never-ending <span id="span1">__________</span>, filled with twists and turns we never expect. I’ve spent most of mine in <span id="span2">__________</span>,
+        and it has shaped who I am.
+    </p>
+    <p>
+        My <span id="span3">__________</span> has always been there for me, supporting my goals and inspiring me to be better. We enjoy traveling and creating memories together.
+    </p>
+    <p>
+        I’ve always had a fascination with <span id="span4">__________</span>, and it's the reason I’m pursuing a degree in web development.
+    </p>
+
+    <button onclick="document.getElementById('span1').innerHTML = first">Fill 1</button><br />
+    <button onclick="document.getElementById('span2').innerHTML = second">Fill 2</button><br />
+    <button onclick="document.getElementById('span3').innerHTML = third">Fill 3</button><br />
+    <button onclick="document.getElementById('span4').innerHTML = fourth">Fill 4</button><br />
+</body>
+</html>
