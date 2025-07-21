@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Scott Macioce - CSD 340 - Assignment 11.2: JavaScript - Part 3 -->
+<head>
+    <meta charset="UTF-8">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        h1 {
+            color: #2E5339;
+        }
+        input[type="text"] {
+            padding: 8px;
+            width: 200px;
+            margin-right: 10px;
+        }
+        button {
+            padding: 8px 12px;
+            margin-right: 10px;
+        }
+        #output {
+            margin-top: 20px;
+            background-color: #fff;
+            padding: 15px;
+            border: 1px solid #ccc;
+            max-width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Assignment 11.2: JavaScript - Part 3</h1>
+
+    <input type="text" id="inputItem" placeholder="Enter an item" />
+    <button onclick="addItem()">Add</button>
+    <button onclick="deleteLast()">Delete Last Entry</button>
+    <button onclick="displayItems()">Display</button>
+
+    <div id="output"></div>
+
+    <script>
+        let items = [];
+
+        function addItem() {
+            const input = document.getElementById("inputItem").value;
+            if (input.trim() !== "") {
+                items.push(input);
+                alert(`Added "${input}" at position ${items.length}`);
+                document.getElementById("inputItem").value = ""; // Clear input
+            } else {
+                alert("Please enter a valid item.");
+            }
+        }
+
+        function deleteLast() {
+            if (items.length > 0) {
+                const removed = items.pop();
+                alert(`Removed "${removed}" from the list.`);
+            } else {
+                alert("No items to remove.");
+            }
+        }
+
+        function displayItems() {
+            const output = document.getElementById("output");
+            if (items.length === 0) {
+                output.innerHTML = "<p>No items in the list.</p>";
+                return;
+            }
+            let result = "<ol>";
+            for (let i = 0; i < items.length; i++) {
+                result += `<li>${items[i]}</li>`;
+            }
+            result += "</ol>";
+            output.innerHTML = result;
+        }
+    </script>
+</body>
+</html>
